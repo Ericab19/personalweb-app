@@ -1,0 +1,58 @@
+.row-title {
+    min-height: 650px;
+}
+.my-photo {
+    box-shadow: none;
+    overflow: hidden;
+}
+.my-name {
+    font-family: $font-family-montserrat;
+    font-size: 100px;
+    line-height: 95px;
+    color: #232323;
+}
+
+.my-name strong{
+    border-bottom: 3px solid #ff214f;
+}
+
+.caption {
+    font-family: $font-family-montserrat;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    color: #939393;
+    font-size: 30px;
+    line-height: 20px;
+    font-weight: bold;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .row-content {
+      min-height: 500px;
+      margin-top: 100px;
+    }
+  
+  .my-photo {
+    box-shadow: none;
+    overflow: hidden;
+    width: 100%;
+  }
+  .my-name {
+    font-family: $font-family-montserrat;
+    font-size: 40px;
+    line-height: 35px;
+    color: #232323;
+  }
+  .my-name strong {
+    border-bottom: 3px solid #ff214f;
+  }
+  .caption {
+    font-family: $font-family-montserrat;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    color: #939393;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+  }
+}

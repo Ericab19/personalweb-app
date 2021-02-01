@@ -13,10 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [App\Http\Controllers\IndexController::class, 'index']);
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+
+Route::resource('experiences', App\Http\Controllers\ExperienceController::class)->middleware('auth');
+
+Route::resource('educations', App\Http\Controllers\EducationController::class)->middleware('auth');
+
+Route::resource('portofolios', App\Http\Controllers\PortofolioController::class)->middleware('auth');
+
+Route::resource('getintouchs', App\Http\Controllers\GetintouchController::class)->middleware('auth');

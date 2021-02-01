@@ -26,3 +26,14 @@
     </div>
 </div>
 @endsection
+
+<!-- cursor -->
+<style type="text/css">
+    body{cursor: url("http://2.bp.blogspot.com/-NH2UONdsijY/UTl0CNeBM-I/AAAAAAAACj0/n2RgI7lUAG4/s1600/kursor+besi+jonarendra.blog.png"), auto;}
+    </style>
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="/img/LOGO.png" type="image/png">
+
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
